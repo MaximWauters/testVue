@@ -5,6 +5,12 @@ export default defineNuxtConfig({
         baseURL: '/testVue',
     
       },
+      tailwindcss: {
+        cssPath: '~/assets/css/tailwind.css',
+        configPath: '~/tailwind.config.js',
+        injectPosition: 0,
+        viewer: false,
+      }
       
     
 } )
