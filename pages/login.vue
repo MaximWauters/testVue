@@ -7,12 +7,6 @@ const auth = useAuthStore()
 const email = ref('')
 const password = ref('')
 
-/*
-function onSubmit() {
-  console.log(email.value)
-  console.log(password.value)
-}
-*/
 </script>
 
 <template>

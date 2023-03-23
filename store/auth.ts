@@ -5,15 +5,18 @@ export const useAuthStore = defineStore('useAuthStore', () => {
     //const session = ref()
     const user = useSupabaseUser()
 
+
     async function login(email: string, password: string){
         const { data, error } = await client.auth.signInWithPassword({email, password})
-        console.log(error)
-        if (error) throw error
+        //console.log(error)
+        if (error != null) {
+            alert(error)
+            throw error; 
+        }
 
         console.log(data)
 
-       // session.value = data 
-
+        alert("Welcome user: " + data.user?.email + " !")
         navigateTo('/')
 
         return data

@@ -1,19 +1,8 @@
 <script setup lang="ts">
-//const client = useSupabaseClient();
+    import { useAuthStore } from '~~/store/auth';
 
-import { useAuthStore } from '~~/store/auth';
-
-
-const auth = useAuthStore()
-
-//const session = await (await client.auth.getSession()).data.session;
-
-//console.log(session)
-
-
-
+    const auth = useAuthStore()
 </script>
-
 
 <template>
     <div class="h-[69px] bg-blue-500 flex gap-5 text-xl text-white font-bold items-center px-5">
