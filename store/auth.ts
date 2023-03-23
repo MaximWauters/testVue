@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+//import  useSupabaseClient  from "@nuxtjs/supabase"
 
 export const useAuthStore = defineStore('useAuthStore', () => {
     const client = useSupabaseClient()
