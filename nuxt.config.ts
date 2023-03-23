@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase','@pinia/nuxt'],
     app: {
-        baseURL: './testVue/'
+        baseURL: '/testVue',
+    
       },
       
     
