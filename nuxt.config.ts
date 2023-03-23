@@ -4,13 +4,14 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/testVue',
     
-      },
-      tailwindcss: {
+    },
+
+    tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
         configPath: '~/tailwind.config.js',
         injectPosition: 0,
         viewer: false,
-      }
+    }
       
     
 } )
